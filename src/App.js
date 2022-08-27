@@ -6,7 +6,7 @@ import projects from "./data/projects.json";
 import { useEffect } from "react";
 
 function calcBirthDate() {
-  const myDate = new Date('1992-08-26');
+  const myDate = new Date('1992-09-05');
   const today = new Date();
 
   return parseInt(new Date(today - myDate).getFullYear() - 1970)
