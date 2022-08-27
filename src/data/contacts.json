@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Linkedin",
+        "link": "https://www.linkedin.com/in/jezstdio",
+        "text": "linkedin.com/in/jezstdio"
+    },
+    {
+        "name": "GitHub",
+        "link": "https://github.com/jezstdio",
+        "text": "github.com/jezstdio"
+    },
+    {
+        "name": "CodePen",
+        "link": "https://codepen.io/jezstdio",
+        "text": "codepen.io/jezstdio"
+    }
+]

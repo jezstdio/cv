@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap&subset=latin-ext');
+
+$blue-color: #2B82FF;
+$breakpoint: 1024px;
+
+/* COLORS */
+:root {
+  --breakpoint: #{$breakpoint};
+
+  --light-gray: #F9F9F9; // for article bg
+  --medium-gray: #CACACA; // for headings color
+  --dark-gray: #B0B0B0; // for aside text color
+  --darkest-gray: #404040; // for aside bg
+
+  --black: #282828; // for text
+
+  --blue: #{$blue-color}; // for links and buttons
+
+  --blue-80o: rgba(43, 130, 255, 0.8); // for buttons
+  --blue-24o: rgba(43, 130, 255, 0.24); // for buttons
+
+  --red: #F43F74;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--blue);
+  display: inline-block;
+}
+
+a:disabled {
+  opacity: 0.2;
+}
+
+article {
+  background-color: var(--light-gray);
+  border-radius: 8px;
+  margin: 0 16px;
+  padding: 32px;
+  width: calc(100% - 32px);
+}
+
+aside {
+  background-color: var(--darkest-gray);
+  border-radius: 8px;
+  color: var(--dark-gray);
+  margin: 24px -16px;
+  max-width: 580px;
+  padding: 16px;
+  overflow: hidden;
+
+  a {
+    color: var(--red);
+  }
+
+  @media screen and (min-width: var(--breakpoint)) {
+    margin: 24px 0;
+  }
+}
+
+body {
+  border-top: 16px solid var(--black);
+  color: var(--black);
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 0 16px 0;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+dl {
+  margin: 0;
+
+  & dd {
+    margin: 0;
+  }
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+h2 {
+  color: var(--medium-gray);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0 0 16px 0;
+}
+
+dl {
+  dt {
+    &:before {
+      content: '/* ';
+    }
+
+    &:after {
+      content: ' */';
+    }
+  }
+
+  dd {
+    margin-bottom: 16px;
+  }
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1176px;
+}
+
+ul {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 0;
+}
+
+section {
+  margin-bottom: 24px;
+}
+
+p {
+  margin: 0 0 16px 0;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.button {
+  border-radius: 4px;
+  display: block;
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 8px 0 0;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &.blue {
+    background-color: var(--blue);
+    box-shadow: 0 2px 4px -2px var(--blue-80o);
+    color: #fff;
+
+    &:hover {
+      background-color: lighten($blue-color, 16%);
+      box-shadow: 0 4px 16px -8px var(--blue-24o);
+    }
+
+    &:active {
+      background-color: darken($blue-color, 16%);
+      box-shadow: 0 2px 4px -2px var(--blue-80o);
+    }
+  }
+}
+
+.break--mobile {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+
+  &.direction-row--desktop {
+    flex-direction: column;
+  }
+}
+
+.hide-down {
+  .hide-me {
+    display: none;
+
+    + p {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.hidden--mobile {
+  display: none;
+}
+
+.separator {
+  display: inline;
+}
+
+.show-me {
+  display: none;
+}
+
+.show-down {
+  span.show-me {
+    display: inline;
+  }
+
+  p.show-me {
+    display: block;
+  }
+}
+
+.super {
+  padding: 40px;
+}
+
+.typewriter {
+  animation:
+    typing 2.5s steps(13, end),
+    blinking 1s step-end infinite;
+  border-right: 2px solid var(--black);
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.width-100 { width: 100%; }
+
+@media screen and (min-width: 768px) {
+  .break--mobile {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: $breakpoint) {
+  article,
+  aside {
+    padding: 40px;
+  }
+
+  article {
+    aside {
+      display: none;
+    }
+  }
+
+  aside {
+    margin: 0 16px 16px 0;
+  }
+
+  .d-flex {
+    &.direction-row--desktop {
+      flex-direction: row;
+    }
+  }
+
+  .hidden--mobile {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  article,
+  aside {
+    padding: 40px 56px;
+  }
+}
+
+[class*="animate-"] {
+  --animation-speed: 1s;
+  --animation-type: ease;
+
+  transition: var(--animation-speed) var(--animation-type);
+}
+
+.animate-appear {
+  opacity: 0;
+}
+
+.animated {
+  opacity: 1;
+}
+
+@keyframes typing {
+  0% {
+    width: 0px
+  }
+
+  100% {
+    width: 189px
+  }
+}
+
+@keyframes blinking {
+  0% {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: var(--black)
+  }
+
+  100% {
+    border-color: transparent
+  }
+}

@@ -1,0 +1,36 @@
+[
+    {
+        "name": "Homepage",
+        "link": "https://jezstd.io",
+        "text": "jezstd.io"
+    },
+    {
+        "name": "Aréna mesterei",
+        "link": "https://arenamesterei.jezstd.io",
+        "description": "Competitive point calculation app for Aréna mesterei."
+    },
+    {
+        "name": "Memory App",
+        "link": "https://memory.jezstd.io",
+        "description": "An easy-to use, yet powerful application to exercise mnemonic memorization skills."
+    },
+    {
+        "name": "Customer Counter",
+        "link": "http://auchan.jezstd.io/vasarlo-szamlalo/",
+        "description": "Little, but really useful application for our reception and security persons. With this they could handle counting customers in an easy way through COVID-19 restrictions."
+    },
+    {
+        "name": "Late Delivery",
+        "link": "http://auchan.jezstd.io/kesobbi-elvitel/",
+        "description": "Missing, but deeply required program for tracking products ordered by late delivery."
+    },
+    {
+        "name": "BLRD!",
+        "link": "https://blrd.jezstd.io",
+        "description": "Your Online Real-time Social Voting Game."
+    },
+    {
+        "name": "Countless little scripts on GitHub and CodePen",
+        "description": "I made various little scripts for Auchan and Alza, to make our browser experience better. You can find them mostly on GitHub but a few I have on CodePen also."
+    }
+]

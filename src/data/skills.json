@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Code Editors",
+    "list": "Visual Studio Code, Vim, XCode"
+  },
+  {
+    "title": "Collaboration Tools",
+    "list": "Git, Trello, Jira"
+  },
+  {
+    "title": "Languages",
+    "list": "HTML5, CSS3 + SASS, JavaScript/ES6, Liquid"
+  },
+  {
+    "title": "Site Generator",
+    "list": "Jekyll"
+  },
+  {
+    "title": "Client Side Technologies",
+    "list": "Custom frameworks, Bootstrap, jQuery, ReactJS"
+  },
+  {
+    "title": "Server Side Technologies",
+    "list": "NodeJS + ExpressJS, EJS, Websocket"
+  },
+  {
+    "title": "Databases",
+    "list": "MongoDB, Redis"
+  },
+  {
+    "title": "DevOps",
+    "list": "Docker"
+  },
+  {
+    "title": "UI/UX Design",
+    "list": "Figma, Sketch, Adobe XD, Custom Design System"
+  }
+]
