@@ -100,16 +100,6 @@ h2 {
 }
 
 dl {
-  dt {
-    &:before {
-      content: '/* ';
-    }
-
-    &:after {
-      content: ' */';
-    }
-  }
-
   dd {
     margin-bottom: 16px;
   }

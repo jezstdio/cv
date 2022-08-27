@@ -1,3 +1,4 @@
+import './style.scss';
 import contacts from "./data/contacts.json";
 import relevant_jobs from "./data/relevant_jobs.json";
 import skills from "./data/skills.json";
@@ -18,6 +19,8 @@ function App() {
     const checkScreen = () => {
       Animation.tags.forEach((item) => item.getBoundingClientRect().y - window.innerHeight <= 0 ? item.classList.add("animated") : false);
     };
+
+    checkScreen();
 
     window.addEventListener("load", checkScreen);
     window.addEventListener("scroll", checkScreen);
@@ -53,7 +56,7 @@ function App() {
               { relevant_jobs.map(job => (
                 <div className="animate-appear">
                   <dt>
-                    {job.time} <a href={job.link} target="_blank" rel="noreferrer">{` ${job.name}`}</a>
+                    /* {job.time} <a href={job.link} target="_blank" rel="noreferrer">{` ${job.name}`}</a> */
                   </dt>
                   <dd>{job.description}</dd>
                 </div>
@@ -65,7 +68,7 @@ function App() {
             <dl className="animate-appear">
               { skills.map(skill => (
                 <div className="animate-appear">
-                  <dt>{skill.title}</dt>
+                  <dt>/* {skill.title} */</dt>
                   <dd>{skill.list}</dd>
                 </div>
               )) }
