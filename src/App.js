@@ -95,7 +95,7 @@ function App() {
               </li>
             </ul>
           </section>
-          <a className="button blue animate-appear" href="gabor_jez-cv.pdf">Download CV</a>
+          { /* <a className="button blue animate-appear" href="gabor_jez-cv.pdf">Download CV</a> */ }
         </article>
         <div className="hidden--mobile animate-appear width-100">
           <AsideIntroduction />
