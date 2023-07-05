@@ -1,8 +1,18 @@
 [
     {
         "time": "2020.08 - 2019.09",
-        "name": "Classy Sound",
-        "link": "https://classysound.com",
-        "description": "I was in charge of the development of the company's Shopify Webshop. My daily job was implementation of new features, debugging, bug fixing and basically everything else from UI/UX development, through deployment."
+        "name": "Full Stack Developer - Classy Sound",
+        "link": "https://classysound-dev.myshopify.com",
+        "description": "I was in charge of the development of the company's Shopify Webshop. My daily job was the implementation of new features, debugging, bug fixing and basically everything else from UI/UX development, through deployment."
+    },
+    {
+        "time": "2021.10 - 2020.08",
+        "name": "Sales Assistant - Auchan Magyarország, Savoya Park",
+        "description": "As a Sales Assistant besides my main job, I developed some scripts for our internal site which improved the UX, and a web application called Late Delivery which helped us to track some orders' state."
+    },
+    {
+        "time": "now - 2021.10",
+        "name": "Sales Specialist - Alza.hu",
+        "description": "As a Sales Specialist besides my main job, I'm developing some scripts for our website which improves the UX, and a web application called Terminal which helps us to track our daily/monthly report, check and calculates our salary and more."
     }
 ]

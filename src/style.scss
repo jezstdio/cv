@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap&subset=latin-ext');
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap&subset=latin-ext");
 
-$blue-color: #2B82FF;
+$blue-color: #2b82ff;
 $breakpoint: 1024px;
 
 /* COLORS */
 :root {
   --breakpoint: #{$breakpoint};
 
-  --light-gray: #F9F9F9; // for article bg
-  --medium-gray: #CACACA; // for headings color
-  --dark-gray: #B0B0B0; // for aside text color
+  --light-gray: #f9f9f9; // for article bg
+  --medium-gray: #cacaca; // for headings color
+  --dark-gray: #b0b0b0; // for aside text color
   --darkest-gray: #404040; // for aside bg
 
   --black: #282828; // for text
@@ -19,7 +19,7 @@ $breakpoint: 1024px;
   --blue-80o: rgba(43, 130, 255, 0.8); // for buttons
   --blue-24o: rgba(43, 130, 255, 0.24); // for buttons
 
-  --red: #F43F74;
+  --red: #f43f74;
 }
 
 * {
@@ -64,7 +64,7 @@ aside {
 body {
   border-top: 16px solid var(--black);
   color: var(--black);
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -80,6 +80,9 @@ button {
 dl {
   margin: 0;
 
+  & dt {
+    font-weight: bold;
+  }
   & dd {
     margin: 0;
   }
@@ -215,16 +218,16 @@ p {
 }
 
 .typewriter {
-  animation:
-    typing 2.5s steps(13, end),
-    blinking 1s step-end infinite;
+  animation: typing 2.5s steps(13, end), blinking 1s step-end infinite;
   border-right: 2px solid var(--black);
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
 }
 
-.width-100 { width: 100%; }
+.width-100 {
+  width: 100%;
+}
 
 @media screen and (min-width: 768px) {
   .break--mobile {
@@ -283,24 +286,24 @@ p {
 
 @keyframes typing {
   0% {
-    width: 0px
+    width: 0px;
   }
 
   100% {
-    width: 189px
+    width: 189px;
   }
 }
 
 @keyframes blinking {
   0% {
-    border-color: transparent
+    border-color: transparent;
   }
 
   50% {
-    border-color: var(--black)
+    border-color: var(--black);
   }
 
   100% {
-    border-color: transparent
+    border-color: transparent;
   }
 }
